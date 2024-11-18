@@ -69,3 +69,22 @@ Provide inputs:
 
 - **`start_image_object_detection`**  
   Handles the full pipeline: loading the image, running detection, and displaying the results.
+
+## 📂 Resources
+- **YOLOv4-Tiny Model**: [YOLOv4-Tiny Documentation](https://github.com/AlexeyAB/darknet)
+- **COCO Dataset Classes**: List of classes available in `resources/coco.names.txt`.
+
+---
+
+## 📜 License
+This project is licensed under the MIT License.
+
+---
+
+## 🌟 Acknowledgments
+- **YOLO Framework**: Developed by Joseph Redmon and the community.
+- **OpenCV**: For its robust computer vision utilities.
+
+---
+
+Enjoy exploring the power of real-time object detection! 💻✨
