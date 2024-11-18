@@ -1,90 +1,90 @@
-# Object Detection with YOLOv4-Tiny
+# Обнаружение объектов с помощью YOLOv4-Tiny
 
-## 📋 Overview
-This project demonstrates how to perform real-time object detection using the YOLOv4-Tiny model. The code processes an image, detects objects specified by the user, and displays the annotated image in a resizable window.
+## 📋 Обзор
+Этот проект демонстрирует, как выполнять обнаружение объектов в реальном времени с помощью модели YOLOv4-Tiny. Код обрабатывает изображение, обнаруживает объекты, указанные пользователем, и отображает аннотированное изображение в окне с изменяемым размером.
 
 ---
 
 ## 🛠️ Features
-- **YOLOv4-Tiny Integration**: Utilizes a lightweight yet powerful deep learning model for object detection.
-- **Customizable Detection**: Allows users to specify which object categories to detect.
-- **Real-time Visualization**: Highlights detected objects with bounding boxes and labels.
-- **User-friendly Input**: Accepts image paths and object categories interactively.
+- Интеграция **YOLOv4-Tiny**: Использует легкую, но мощную модель глубокого обучения для обнаружения объектов.
+- **Настраиваемое обнаружение**: Позволяет пользователям указывать, какие категории объектов следует обнаруживать.
+- **Визуализация в реальном времени**: Выделение обнаруженных объектов ограничительными рамками и метками.
+- **Удобный для пользователя ввод**: Интерактивно принимает пути изображения и категории объектов.
 
 ---
 
-## 📁 Project Structure
-```plaintext
+## 📁 Структура проекта
+```
 project/
 │
-├── resources/
-│   ├── yolov4-tiny.cfg        # YOLOv4-Tiny configuration file
-│   ├── yolov4-tiny.weights    # Pre-trained YOLOv4-Tiny weights
-│   ├── coco.names.txt         # List of COCO dataset class names
+├──── resources/
+│ ├──── yolov4-tiny.cfg # Конфигурационный файл YOLOv4-Tiny
+│ ├──── yolov4-tiny.weights # Предварительно обученные веса YOLOv4-Tiny
+│ ├──── coco.names.txt # Список имен классов набора данных COCO
 │
-├── main.py                    # Entry point for the project
+├──── main.py # Точка входа в проект
 ```
 
-## 🚀 Getting Started
+## 🚀 Начало работы
 
-### 1️⃣ Prerequisites
-Ensure you have the following installed:
+### 1️⃣ Необходимые условия
+Убедитесь, что у вас установлено следующее:
 
 - Python 3.7+
 - OpenCV
 - NumPy
 
-### 2️⃣ Installation
-Clone this repository:
+### 2️⃣ Установка
+Клонируйте этот репозиторий:
 ```plaintext
 git clone https://gitlab.com/your-repo/object-detection-yolov4-tiny.git
 cd object-detection-yolov4-tiny
 ```
-Install dependencies:
+Установите зависимости:
 ```plaintext
 pip install -r requirements.txt
 ```
 
-Download the YOLOv4-Tiny weights and configuration files if not already included.
+Загрузите весовые и конфигурационные файлы YOLOv4-Tiny, если они еще не включены.
 
-## 🖼️ Usage
-Run the script:
+## 🖼️ Использование
+Запустите скрипт:
 ```plaintext
 python main.py
 ```
 
-Provide inputs:
+Предоставьте исходные данные:
 
-- **Image Path**: Enter the path to the image you want to process.
-- **Objects to Detect**: List the objects (e.g., car, person) or leave blank to detect all objects.
-- **View Results**: The processed image with detected objects will be displayed in a resizable window.
+- **Путь к изображению**: Введите путь к изображению, которое вы хотите обработать.
+- **Объекты для обнаружения**: Перечислите объекты (например, автомобиль, человек) или оставьте пустым, чтобы обнаружить все объекты.
+- **Просмотреть результаты**: Обработанное изображение с обнаруженными объектами будет отображено в окне с изменяемым размером.
 
-## 🔧 Key Functions
+## 🔧 Ключевые функции.
 
-- **`draw_text`**  
-  Adds text labels with an outline to the image.
+- **`draw_text`**.  
+  Добавляет на изображение текстовые метки с контуром.
 
-- **`object_detection`**  
-  Detects objects in the given image using YOLO and applies non-maximum suppression to remove overlapping boxes.
+- **`Обнаружение_объектов`**  
+  Обнаруживает объекты на заданном изображении с помощью YOLO и применяет не максимальное подавление для удаления перекрывающихся областей.
 
 - **`start_image_object_detection`**  
-  Handles the full pipeline: loading the image, running detection, and displaying the results.
+  Выполняет полный цикл: загрузку изображения, запуск обнаружения и отображение результатов.
 
-## 📂 Resources
+## 📂 Ресурсы.
 - **YOLOv4-Tiny Model**: [YOLOv4-Tiny Documentation](https://github.com/AlexeyAB/darknet)
-- **COCO Dataset Classes**: List of classes available in `resources/coco.names.txt`.
+- **Классы датасетов COCO**: Список классов, доступных в `resources/coco.names.txt`.
 
 ---
 
-## 📜 License
-This project is licensed under the MIT License.
+## 📜 Лицензия
+Этот проект лицензируется по лицензии MIT License.
 
 ---
 
-## 🌟 Acknowledgments
-- **YOLO Framework**: Developed by Joseph Redmon and the community.
-- **OpenCV**: For its robust computer vision utilities.
+## 🌟 Благодарности
+- Фреймворк **YOLO Framework**: Разработан Джозефом Редмоном и сообществом.
+- **OpenCV**: За его надежные утилиты компьютерного зрения.
 
 ---
 
-Enjoy exploring the power of real-time object detection! 💻✨
+Наслаждайтесь исследованием возможностей обнаружения объектов в реальном времени! 💻✨
