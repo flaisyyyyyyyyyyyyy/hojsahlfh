@@ -14,12 +14,16 @@ This project demonstrates how to perform real-time object detection using the YO
 ---
 
 ## 📁 Project Structure
-project/ │ ├── resources/ │ ├── yolov4-tiny.cfg # YOLOv4-Tiny configuration file │ ├── yolov4-tiny.weights # Pre-trained YOLOv4-Tiny weights │ ├── coco.names.txt # List of COCO dataset class names │ ├── main.py # Entry point for the project
+```plaintext
+project/
+│
+├── resources/
+│   ├── yolov4-tiny.cfg        # YOLOv4-Tiny configuration file
+│   ├── yolov4-tiny.weights    # Pre-trained YOLOv4-Tiny weights
+│   ├── coco.names.txt         # List of COCO dataset class names
+│
+├── main.py                    # Entry point for the project
 
-yaml
-Копировать код
-
----
 
 ## 🚀 Getting Started
 
