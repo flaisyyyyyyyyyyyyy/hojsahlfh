@@ -23,58 +23,27 @@ project/
 │   ├── coco.names.txt         # List of COCO dataset class names
 │
 ├── main.py                    # Entry point for the project
-
+```
 
 ## 🚀 Getting Started
 
 ### 1️⃣ Prerequisites
 Ensure you have the following installed:
+
 - Python 3.7+
 - OpenCV
 - NumPy
 
-### 2️⃣ Installation
+###2️⃣ Installation
 Clone this repository:
-```bash
+```plaintext
 git clone https://gitlab.com/your-repo/object-detection-yolov4-tiny.git
 cd object-detection-yolov4-tiny
+```
 Install dependencies:
-
-bash
-Копировать код
+```plaintext
 pip install -r requirements.txt
+```
+
 Download the YOLOv4-Tiny weights and configuration files if not already included.
 
-🖼️ Usage
-Run the script:
-
-bash
-Копировать код
-python main.py
-Provide inputs:
-Image Path: Enter the path to the image you want to process.
-Objects to Detect: List the objects (e.g., car, person) or leave blank to detect all objects.
-View Results:
-The processed image with detected objects will be displayed in a resizable window.
-
-🔧 Key Functions
-draw_text
-
-Adds text labels with an outline to the image.
-object_detection
-
-Detects objects in the given image using YOLO and applies non-maximum suppression to remove overlapping boxes.
-start_image_object_detection
-
-Handles the full pipeline: loading the image, running detection, and displaying the results.
-📂 Resources
-YOLOv4-Tiny Model: YOLOv4-Tiny Documentation
-COCO Dataset Classes: List of classes available in resources/coco.names.txt.
-📜 License
-This project is licensed under the MIT License.
-
-🌟 Acknowledgments
-YOLO Framework: Developed by Joseph Redmon and the community.
-OpenCV: For its robust computer vision utilities.
-
-Enjoy exploring the power of real-time object detection! 💻✨
