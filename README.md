@@ -52,8 +52,10 @@ Run the script:
 ```plaintext
 python main.py
 ```
+
 Provide inputs:
 
-Image Path: Enter the path to the image you want to process.
-Objects to Detect: List the objects (e.g., car, person) or leave blank to detect all objects.
-View Results: The processed image with detected objects will be displayed in a resizable window.
+- **Image Path**: Enter the path to the image you want to process.
+- **Objects to Detect**: List the objects (e.g., car, person) or leave blank to detect all objects.
+- **View Results**: The processed image with detected objects will be displayed in a resizable window.
+
