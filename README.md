@@ -1,80 +1,76 @@
-<!-- Improved compatibility of back to top link: See: https://github.com/flaisy/ObjDetect_Intern24/pull/73 -->
-<a id="readme-top"></a>
-<!--
-*** Thanks for checking out the ObjDetect_Intern24 README. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
+# Object Detection with YOLOv4-Tiny
 
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+## 📋 Overview
+This project demonstrates how to perform real-time object detection using the YOLOv4-Tiny model. The code processes an image, detects objects specified by the user, and displays the annotated image in a resizable window.
 
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://github.com/flaisy/ObjDetect_Intern24">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
+---
 
-  <h3 align="center">ObjDetect_Intern24</h3>
+## 🛠️ Features
+- **YOLOv4-Tiny Integration**: Utilizes a lightweight yet powerful deep learning model for object detection.
+- **Customizable Detection**: Allows users to specify which object categories to detect.
+- **Real-time Visualization**: Highlights detected objects with bounding boxes and labels.
+- **User-friendly Input**: Accepts image paths and object categories interactively.
 
-  <p align="center">
-    An awesome project to kickstart object detection!
-    <br />
-    <a href="https://github.com/flaisy/ObjDetect_Intern24"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/flaisy/ObjDetect_Intern24">View Demo</a>
-    ·
-    <a href="https://github.com/flaisy/ObjDetect_Intern24/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
-    ·
-    <a href="https://github.com/flaisy/ObjDetect_Intern24/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
-  </p>
-</div>
+---
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
+## 📁 Project Structure
+project/ │ ├── resources/ │ ├── yolov4-tiny.cfg # YOLOv4-Tiny configuration file │ ├── yolov4-tiny.weights # Pre-trained YOLOv4-Tiny weights │ ├── coco.names.txt # List of COCO dataset class names │ ├── main.py # Entry point for the project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+yaml
+Копировать код
 
-This project provides a foundational template for implementing object detection systems. It aims to make development easier for beginners and professionals alike.
+---
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+## 🚀 Getting Started
 
-### Built With
+### 1️⃣ Prerequisites
+Ensure you have the following installed:
+- Python 3.7+
+- OpenCV
+- NumPy
 
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+### 2️⃣ Installation
+Clone this repository:
+```bash
+git clone https://gitlab.com/your-repo/object-detection-yolov4-tiny.git
+cd object-detection-yolov4-tiny
+Install dependencies:
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+bash
+Копировать код
+pip install -r requirements.txt
+Download the YOLOv4-Tiny weights and configuration files if not already included.
 
-<!-- GETTING STARTED -->
-## Getting Started
+🖼️ Usage
+Run the script:
 
-To set up the project locally, follow the instructions below.
+bash
+Копировать код
+python main.py
+Provide inputs:
+Image Path: Enter the path to the image you want to process.
+Objects to Detect: List the objects (e.g., car, person) or leave blank to detect all objects.
+View Results:
+The processed image with detected objects will be displayed in a resizable window.
 
-### Installation
+🔧 Key Functions
+draw_text
 
-1. Clone the repo:
-   ```sh
-   git clone https://github.com/flaisy/ObjDetect_Intern24.git
+Adds text labels with an outline to the image.
+object_detection
+
+Detects objects in the given image using YOLO and applies non-maximum suppression to remove overlapping boxes.
+start_image_object_detection
+
+Handles the full pipeline: loading the image, running detection, and displaying the results.
+📂 Resources
+YOLOv4-Tiny Model: YOLOv4-Tiny Documentation
+COCO Dataset Classes: List of classes available in resources/coco.names.txt.
+📜 License
+This project is licensed under the MIT License.
+
+🌟 Acknowledgments
+YOLO Framework: Developed by Joseph Redmon and the community.
+OpenCV: For its robust computer vision utilities.
+
+Enjoy exploring the power of real-time object detection! 💻✨
