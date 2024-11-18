@@ -34,7 +34,7 @@ Ensure you have the following installed:
 - OpenCV
 - NumPy
 
-###2️⃣ Installation
+### 2️⃣ Installation
 Clone this repository:
 ```plaintext
 git clone https://gitlab.com/your-repo/object-detection-yolov4-tiny.git
