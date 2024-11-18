@@ -59,3 +59,13 @@ Provide inputs:
 - **Objects to Detect**: List the objects (e.g., car, person) or leave blank to detect all objects.
 - **View Results**: The processed image with detected objects will be displayed in a resizable window.
 
+## 🔧 Key Functions
+
+- **`draw_text`**  
+  Adds text labels with an outline to the image.
+
+- **`object_detection`**  
+  Detects objects in the given image using YOLO and applies non-maximum suppression to remove overlapping boxes.
+
+- **`start_image_object_detection`**  
+  Handles the full pipeline: loading the image, running detection, and displaying the results.
